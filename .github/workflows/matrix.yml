@@ -9,6 +9,8 @@ jobs:
     - id: set-matrix
       shell: pwsh
       run: |
+        ls -la
+        ls -la ..
         Get-Content -Path ./config.json
         echo "matrix={\"include\":[{\"project\":\"foo\",\"config\":\"Debug\"},{\"project\":\"bar\",\"config\":\"Release\"}]}" >> $env:GITHUB_OUTPUT
   execute:
