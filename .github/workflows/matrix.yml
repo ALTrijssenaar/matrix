@@ -8,7 +8,7 @@ jobs:
     steps:
     - id: set-matrix
       shell: pwsh
-      run: Write-Host "matrix={\"include\":[{\"project\":\"foo\",\"config\":\"Debug\"},{\"project\":\"bar\",\"config\":\"Release\"}]}" >> $env:GITHUB_OUTPUT
+      run: echo "matrix={\"include\":[{\"project\":\"foo\",\"config\":\"Debug\"},{\"project\":\"bar\",\"config\":\"Release\"}]}" >> $env:GITHUB_OUTPUT
   execute:
     needs: init
     runs-on: ubuntu-latest
