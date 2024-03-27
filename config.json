@@ -1,12 +1,16 @@
 {
   "include":[
     {
-      "project":"foo",
-      "config":"Debug"
+      "id":"Team 1"
     },
     {
-      "project":"bar",
-      "config":"Release"
+      "id":"Team 2"
+    },
+    {
+      "id":"Team 3"
+    },
+    {
+      "id":"Team 4"
     }
   ]
 }
